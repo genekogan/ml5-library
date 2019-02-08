@@ -4,6 +4,7 @@
 // https://opensource.org/licenses/MIT
 
 import * as tf from '@tensorflow/tfjs';
+import * as tsne from '@tensorflow/tfjs-tsne';
 import pitchDetection from './PitchDetection/';
 import imageClassifier from './ImageClassifier/';
 import KNNClassifier from './KNNClassifier/';
@@ -16,6 +17,7 @@ import styleTransfer from './StyleTransfer/';
 import charRNN from './CharRNN/';
 import pix2pix from './Pix2pix/';
 import SketchRNN from './SketchRNN';
+import tSNE from './tSNE';
 
 module.exports = {
   imageClassifier,
@@ -29,7 +31,9 @@ module.exports = {
   charRNN,
   pix2pix,
   SketchRNN,
+  tSNE,
   ...imageUtils,
   tf,
+  tsne,
 };
 
